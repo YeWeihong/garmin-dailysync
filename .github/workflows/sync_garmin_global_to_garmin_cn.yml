@@ -3,8 +3,8 @@ name: Sync Garmin Global to Garmin CN
 on:
   workflow_dispatch:
   schedule:
-    #  cron表达式每天10:00和22;00检查一次同步
-    - cron: "0 10,22 * * *"
+    #  cron表达式他是UTC时间，换成每天北京时间10:30和22:30检查一次同步
+    - cron: "30 2,14 * * *"
 
 env:
   # please change to your own config.
